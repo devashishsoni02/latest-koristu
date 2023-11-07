@@ -1,0 +1,17 @@
+{
+    "name": "ProductService",
+    "alias": "Product Service",
+    "version": "2.4",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ProductService\\Providers\\ProductServiceServiceProvider",
+        "Modules\\ProductService\\Providers\\ViewComposer"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "module_list": ["Product & service", "Category", "Unit", "Tax"],
+    "display": false
+}

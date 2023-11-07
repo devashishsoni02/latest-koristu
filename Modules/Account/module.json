@@ -1,0 +1,19 @@
+{
+    "name": "Account",
+    "alias": "Accounting",
+    "version": "2.7",
+    "description": "",
+    "keywords": [],
+    "priority": 20,
+    "providers": [
+        "Modules\\Account\\Providers\\AccountServiceProvider",
+        "Modules\\Account\\Providers\\EventServiceProvider",
+        "Modules\\Account\\Providers\\ViewComposer"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "child_module": ["Goal" , "Plaid"],
+    "monthly_price": 10,
+    "yearly_price": 100
+}

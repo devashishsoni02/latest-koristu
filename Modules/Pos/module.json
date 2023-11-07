@@ -1,0 +1,18 @@
+{
+    "name": "Pos",
+    "alias": "POS",
+    "version": "2.6",
+    "description": "",
+    "keywords": [],
+    "priority": 40,
+    "providers": [
+        "Modules\\Pos\\Providers\\PosServiceProvider",
+        "Modules\\Pos\\Providers\\ViewComposer",
+        "Modules\\Pos\\Providers\\EventServiceProvider",
+        "Modules\\Pos\\Providers\\VendorPurchase"
+
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

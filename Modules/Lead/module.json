@@ -1,0 +1,17 @@
+{
+    "name": "Lead",
+    "alias": "CRM",
+    "version": "2.6",
+    "description": "",
+    "keywords": [],
+    "priority": 50,
+    "providers": [
+        "Modules\\Lead\\Providers\\LeadServiceProvider",
+        "Modules\\Lead\\Providers\\EventServiceProvider",
+        "Modules\\Lead\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "child_module": ["FormBuilder"]
+}

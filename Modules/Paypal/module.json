@@ -1,0 +1,20 @@
+{
+    "name": "Paypal",
+    "alias": "PayPal",
+    "version": "2.6",
+    "description": "",
+    "keywords": [],
+    "priority": 185,
+    "providers": [
+        "Modules\\Paypal\\Providers\\PaypalServiceProvider",
+        "Modules\\Paypal\\Providers\\ViewComposer",
+        "Modules\\Paypal\\Providers\\InvoicePayment",
+        "Modules\\Paypal\\Providers\\SalesInvoicePayment",
+        "Modules\\Paypal\\Providers\\RetainerPayment",
+        "Modules\\Paypal\\Providers\\CoursePayment",
+        "Modules\\Paypal\\Providers\\HotelRoomBookingPayment"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

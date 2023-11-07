@@ -1,0 +1,17 @@
+{
+    "name": "Hrm",
+    "alias": "HRM",
+    "version": "2.5",
+    "description": "",
+    "keywords": [],
+    "priority": 30,
+    "providers": [
+        "Modules\\Hrm\\Providers\\HrmServiceProvider",
+        "Modules\\Hrm\\Providers\\ViewComposer",
+        "Modules\\Hrm\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "child_module": ["Performance", "Recruitment", "Training"]
+}

@@ -1,0 +1,34 @@
+<?php
+
+namespace Modules\Hrm\Entities;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Attendance extends Model
+{
+    use HasFactory;
+
+    protected static function newFactory()
+    {
+        return \Modules\Hrm\Database\factories\AttendanceFactory::new();
+    }
+    protected $fillable = [
+        'employee_id',
+        'date',
+        'status',
+        'clock_in',
+        'clock_out',
+        'late',
+        'early_leaving',
+        'overtime',
+        'total_rest',
+        'workspace',
+        'created_by',
+    ];
+    public function employees()
+    {
+        return $this->hasOne('App\Models\User', 'id', 'employee_id');
+    }
+   
+}

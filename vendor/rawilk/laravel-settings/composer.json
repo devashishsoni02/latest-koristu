@@ -1,0 +1,67 @@
+{
+    "name": "rawilk/laravel-settings",
+    "description": "Store Laravel application settings in the database.",
+    "keywords": [
+        "rawilk",
+        "laravel-settings",
+        "settings",
+        "database settings",
+        "eloquent model settings"
+    ],
+    "homepage": "https://github.com/rawilk/laravel-settings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Randall Wilk",
+            "email": "randall@randallwilk.dev",
+            "homepage": "https://randallwilk.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "doctrine/dbal": "^2.12",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "mockery/mockery": "^1.4.2",
+        "orchestra/testbench": "^6.5|^7.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rawilk\\Settings\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rawilk\\Settings\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rawilk\\Settings\\SettingsServiceProvider"
+            ],
+            "aliases": {
+                "Settings": "Rawilk\\Settings\\Facades\\Settings",
+                "SettingsFactory": "Rawilk\\Settings\\Drivers\\Factory"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

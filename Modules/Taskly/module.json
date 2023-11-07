@@ -1,0 +1,20 @@
+{
+    "name": "Taskly",
+    "alias": "Project",
+    "version": "2.4",
+    "description": "",
+    "keywords": [],
+    "priority": 10,
+    "providers": [
+        "Modules\\Taskly\\Providers\\TasklyServiceProvider",
+        "Modules\\Taskly\\Providers\\ViewComposer",
+        "Modules\\Taskly\\Providers\\EventServiceProvider",
+        "Modules\\Taskly\\Providers\\RouteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "settings": [],
+    "requires": [],
+    "module_list": ["Product & service", "Category", "Unit", "Tax"]
+
+}

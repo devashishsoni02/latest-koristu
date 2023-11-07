@@ -1,0 +1,21 @@
+{
+    "name": "Stripe",
+    "alias": "Stripe",
+    "version": "2.8",
+    "description": "",
+    "keywords": [],
+    "priority": 180,
+    "providers": [
+        "Modules\\Stripe\\Providers\\StripeServiceProvider",
+        "Modules\\Stripe\\Providers\\ViewComposer",
+        "Modules\\Stripe\\Providers\\InvoicePayment",
+        "Modules\\Stripe\\Providers\\SalesInvoicePayment",
+        "Modules\\Stripe\\Providers\\RetainerPayment",
+        "Modules\\Stripe\\Providers\\CoursePayment",
+        "Modules\\Stripe\\Providers\\HotelRoomBookingPayment"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "display": true
+}

@@ -22,7 +22,7 @@
         <div class="col-xl-6">
             <div class="card-body">
                 <div class="">
-                    <h2 class="mb-3 f-w-600">{{ __('Login Dashbaord') }}</h2>
+                    <h2 class="mb-3 f-w-600">{{ __('Login Devashish') }}</h2>
                 </div>
                 <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="" id="form_data">
                     @csrf
